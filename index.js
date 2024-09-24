@@ -1,3 +1,4 @@
+app.use(cors());
 const express = require('express')
 const app = express()
 
@@ -39,4 +40,3 @@ app.get('/user-info/:id', (req, res) => {
           res.status(404).json({ message: "Estudiante no encontrado" });
         }
       });
-app.use(cors());
